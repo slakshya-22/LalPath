@@ -5,7 +5,9 @@
   padding: 0;
   font-family: "PT Sans";
 }
-
+html {
+    scroll-behavior: smooth;
+}
 main {
   background-color: #f2f2f2;
 }
@@ -581,101 +583,139 @@ nav {
 
 /* Download Section / Section-12 */
 .download-bg {
-    width: 95%;
-    height: 322px;
-    background: url('img/download-section.png') no-repeat center center; 
-    background-size: cover;
-    margin: auto;
+  width: 95%;
+  height: 322px;
+  background: url("img/download-section.png") no-repeat center center;
+  background-size: cover;
+  margin: auto;
 }
 .download-bg h1 {
-    font-size: 25px;
-    margin: 20px 0;
+  font-size: 25px;
+  margin: 20px 0;
 }
 .download-bg div {
-    padding: 6.25rem;
+  padding: 6.25rem;
 }
 .download-bg img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 /* <!-- Featured Blogs and Articles Section / Section-13 --> */
 
 .blog-img {
-    width: 45%;
-    margin: auto;
-    height: auto;
-  }
-  .blog-img img {
-    border-radius: 20px;
-    margin: 10px 0;
-    height: 80%;
-    width: 80%;
-    
-  }
-  .blog-img h1 {
-    font-size: 1.563rem;
-  }
-  
-  /* Dr Lal PathLabs Videos Section / Section-14 */
-  .videos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Dr Lal PathLabs – Your Most Trusted Healthcare Partner! Section / Section-15 */
+  width: 45%;
+  margin: auto;
+  height: auto;
+}
+.blog-img img {
+  border-radius: 20px;
+  margin: 10px 0;
+  height: 80%;
+  width: 80%;
+}
+.blog-img h1 {
+  font-size: 1.563rem;
+}
 
-  /* FAQ Section-16 */
+/* Dr Lal PathLabs Videos Section / Section-14 */
+.videos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .faq {
-    color: #0046b0;
-    font-size: 1.25rem;
-    padding: 5px;
-    border: 0.7px solid #ffcd4f;
-    margin: 15px 0;
-  }
+/* Dr Lal PathLabs – Your Most Trusted Healthcare Partner! Section / Section-15 */
 
-  /* Places Section - 16 */
- 
+/* FAQ Section-16 */
+
+.faq {
+  color: #0046b0;
+  font-size: 1.25rem;
+  padding: 5px;
+  border: 0.7px solid #ffcd4f;
+  margin: 15px 0;
+}
+
+/* Places Section - 16 */
+
 .place-section .pimage-container {
-    width: 100%;        
-    height: 300px;         
-    position: relative;    
-    overflow: hidden;      
-  }
-  
-  
-  .place-section .pimage-container img {
-    width: 1300px;           
-    height: 100%;          
-    object-fit: cover;    
-    position: absolute;    
-    top: 0;
-    left: 0;
-  }
-  /* Footer */
-  footer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.place-section .pimage-container img {
+  width: 1300px;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Footer */
+footer {
+  width: 100vw;
+  margin-top: 60px;
+}
+.f1 {
+  width: 100vw;
+  background-color: #ffcd4f;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.f1 .p {
+  width: 180px;
+  margin: 10px 10px;
+}
+
+.f1 h4 {
+  margin: 15px 0;
+}
+
+.f1 p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.f2 {
+    background-color: #0046b0;
     width: 100vw;
-  }
-  .f1 {
-    width: 100vw;
-    background-color: #ffcd4f;
+    color: white;
+    font-size: 0.813rem;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 70px;
-
-    & > a {
-        text-decoration: none;
-        color: black;
-    }
-  }
-.f2 {
-    width: 100vw;
-    background-color: #0046b0;
-    font-size: 10px;
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+.f2-text {
+    line-height: 1.5rem;    
+}
+.follow i{
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #ffcd4f;
+}
+i:hover {
+    cursor: pointer;
+}
+button.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcd4f;
+    color: #0046b0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* To ensure it appears above other elements */
+  }
+  
+  button.top:hover {
+    background-color: red;
+  }
+  
