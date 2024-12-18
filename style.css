@@ -1,0 +1,681 @@
+/* Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+}
+
+main {
+  background-color: #f2f2f2;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: small;
+  background-color: #ffcd4f;
+  width: 100vw;
+}
+.head-left {
+  margin-left: 15%;
+}
+.head-left ul {
+  display: flex;
+  margin: 13px;
+}
+.head-left li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.head-left a {
+  text-decoration: none;
+  color: black;
+}
+.head-left a:hover {
+  text-decoration: underline;
+  color: #0b5aa3;
+  font-weight: bold;
+}
+.head-mid a {
+  text-decoration: none;
+  color: black;
+  margin: 13px 5px;
+  font-size: 0.75rem;
+}
+.head-right {
+  display: flex;
+  margin: 13px;
+}
+
+nav {
+  width: 100vw;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-left img {
+  margin: 0 30px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0b5aa3;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#location {
+  width: 108px;
+  height: 40px;
+}
+#Search {
+  width: 181px;
+  height: 40px;
+}
+
+.search-box #location,
+.search-box #Search {
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #0b5aa3;
+  outline: none;
+}
+
+.search-box img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-box button {
+  width: 150px;
+  height: 52px;
+  border: none;
+  background: url("img/nav-createABHA.png") no-repeat center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  opacity: 0.9;
+}
+
+/* Section 1 */
+.section-1 {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section 2 */
+.blue-top {
+  width: 100vw;
+  height: 250px;
+  background-color: #0046b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+.blogo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  border-left: 1px solid #ffcd4f;
+  border-right: 1px solid #ffcd4f;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-container:hover {
+  transform: scale(1.2);
+}
+
+.blogo p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.blogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Section 3 */
+.Floating-div {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  bottom: 40px;
+  background-color: white;
+  padding: 15px 10px;
+}
+
+.float-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+}
+.float-img {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 160px;
+  width: 25%;
+  border-left: 1px solid rgb(226, 224, 224);
+  border-right: 1px solid rgb(226, 224, 224);
+}
+.float-img img {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.float-img img:hover {
+  transform: scale(1.2);
+}
+
+/* Popular tests section / Section 4 */
+
+.test-section {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  bottom: 40px;
+  background-color: white;
+  padding: 15px 10px;
+}
+.test-heading h1,
+.float-heading h1,
+.search-heading h1 {
+  font-size: 25px;
+}
+
+.test-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 10px;
+}
+.test-card {
+  width: 30%;
+  height: 279px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.test-card div {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: left;
+}
+.test-card div img {
+  margin-right: 5px;
+  height: 21px;
+  width: 18px;
+}
+.know-more {
+  font-size: 14px;
+  color: #0b51b3;
+  font-weight: bold;
+  float: right;
+  margin-top: 10px;
+}
+.know-more:hover {
+  cursor: pointer;
+}
+
+.test-bottom {
+  font-size: 20px;
+  text-align: right;
+
+  & > a {
+    color: #0b51b3;
+  }
+}
+
+.price-book-container {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.price {
+  background-color: #ffcd4f;
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.book-button {
+  background-color: #0b51b3;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search Test and Packages Section/Section-5 */
+.package-section {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 15px 10px;
+}
+.search-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.srch_bttns {
+  display: flex;
+  justify-content: space-between;
+}
+.srch_bttn {
+  width: 210px;
+  height: 34px;
+  background-color: #ffcd4f;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.srch_bttn:hover {
+  cursor: pointer;
+}
+#grey {
+  background-color: #bdbdbd;
+  color: white;
+}
+#grey:hover {
+  background-color: #ffcd4f;
+  color: black;
+}
+.mid-srchbox {
+  width: 306px;
+  height: 35px;
+}
+
+.search-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+}
+.search-img {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 160px;
+  width: 20%;
+  border-left: 1px solid rgb(226, 224, 224);
+  border-right: 1px solid rgb(226, 224, 224);
+}
+.search-img img {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  margin-bottom: 10px;
+  width: 64px;
+  height: 55px;
+}
+.search-img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Why Dr. Lal PathLabs Section /Section-6 */
+.why-section {
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+.why-section .why-heading {
+  margin-bottom: 20px;
+}
+
+.why-section .whyboxes-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.whyboxes {
+  /* width: 48%;  */
+  display: flex;
+  flex-direction: column;
+}
+
+.whybox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 15px 0;
+  overflow: hidden; /* Prevents any overflow during zoom */
+}
+
+.whybox img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.whybox:hover img {
+  transform: scale(1.2); /* Zoom in by 20% */
+}
+
+.whybox h2 {
+  color: #0046b0;
+  font-size: 1.875rem;
+  margin: 0;
+}
+
+.whybox p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.test-bottom {
+  margin-top: 30px;
+}
+
+/* Promotions & Discounts Section / Section-7 */
+
+.discount-section,
+.explore-section,
+.covid-section {
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.discount-mid,
+.explore-banner {
+  width: 100%;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.discount-mid img,
+.explore-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.explore-banner img {
+  margin: 20px 20px;
+}
+
+/* Corporate Covid Package Section / Section-9 */
+.covid-card {
+  width: 45%;
+  margin: auto;
+  height: auto;
+}
+.covid-card img {
+  border-radius: 20px;
+  margin: 10px 0;
+}
+.covid-card h1 {
+  font-size: 1.563rem;
+}
+
+/* Quality Section / Section-10 */
+
+.quality-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.quality-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+.quality-card h2 {
+  color: #0046b0;
+  font-size: 1.875rem;
+  margin: 0;
+}
+
+.quality-card p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin: 0;
+}
+.quality-card img {
+  margin-right: 20px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.quality-card:hover img {
+  transform: scale(1.2); /* Zoom in by 20% */
+}
+
+/* Certificates Section / Section-11 */
+.certi-section .test-card div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.certi-section .test-card div img {
+  height: 150px;
+  width: 150px;
+}
+.certi-section .test-card div #svg {
+  height: 93px;
+  width: 150px;
+}
+.img-txt {
+  font-size: 0.75rem;
+}
+
+/* Download Section / Section-12 */
+.download-bg {
+    width: 95%;
+    height: 322px;
+    background: url('img/download-section.png') no-repeat center center; 
+    background-size: cover;
+    margin: auto;
+}
+.download-bg h1 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+.download-bg div {
+    padding: 6.25rem;
+}
+.download-bg img {
+    margin-right: 20px;
+}
+
+/* <!-- Featured Blogs and Articles Section / Section-13 --> */
+
+.blog-img {
+    width: 45%;
+    margin: auto;
+    height: auto;
+  }
+  .blog-img img {
+    border-radius: 20px;
+    margin: 10px 0;
+    height: 80%;
+    width: 80%;
+    
+  }
+  .blog-img h1 {
+    font-size: 1.563rem;
+  }
+  
+  /* Dr Lal PathLabs Videos Section / Section-14 */
+  .videos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Dr Lal PathLabs – Your Most Trusted Healthcare Partner! Section / Section-15 */
+
+  /* FAQ Section-16 */
+
+  .faq {
+    color: #0046b0;
+    font-size: 1.25rem;
+    padding: 5px;
+    border: 0.7px solid #ffcd4f;
+    margin: 15px 0;
+  }
+
+  /* Places Section - 16 */
+ 
+.place-section .pimage-container {
+    width: 100%;        
+    height: 300px;         
+    position: relative;    
+    overflow: hidden;      
+  }
+  
+  
+  .place-section .pimage-container img {
+    width: 1300px;           
+    height: 100%;          
+    object-fit: cover;    
+    position: absolute;    
+    top: 0;
+    left: 0;
+  }
+  /* Footer */
+  footer {
+    width: 100vw;
+  }
+  .f1 {
+    width: 100vw;
+    background-color: #ffcd4f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px;
+
+    & > a {
+        text-decoration: none;
+        color: black;
+    }
+  }
+.f2 {
+    width: 100vw;
+    background-color: #0046b0;
+    font-size: 10px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
